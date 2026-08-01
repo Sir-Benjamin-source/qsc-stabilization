@@ -1,27 +1,23 @@
 # QSC Stabilization
 
-Optimized stabilization control surface for the **Quantum Spiral of Consciousness** readiness function.
+Optimized stabilization and examination substrate for the Quantum Spiral of Consciousness readiness function.
 
-## Current Record (v3)
+## Current Records
 
-| Metric | Base | Stabilized v3 | Change |
-|--------|------|---------------|--------|
-| Residual stability score | 0.7518 | **0.8395** | **+0.0877** |
-| Residual standard deviation | 0.4645 | 0.3177 | **−31.6 %** |
+| Metric | Base | Best | Change |
+|--------|------|------|--------|
+| Residual stability (adaptive) | 0.752 | **0.863** | **+0.111** |
+| Residual std | 0.465 | 0.305 | **−34 %** |
+| Lattice mean coherence | 0.493 | **0.519** | +0.026 |
+| Examination depth (mean) | 5.50 | 5.51 | live metric |
+| Association chain (max) | 5 | 5 | live metric |
 
-Control law keeps the fractal growth envelope and applies a light breathing modulation plus stronger secular decay of the oscillatory term (parameters found by systematic sweep).
+## Modules
 
-## Versions
-
-- **v2**: First measurable gain (+0.0507)
-- **v3**: Parameter-optimized (+0.0877, −31.6 % residual std)
-
-## Quick start
-
-```bash
-cd src
-python stabilization_v3.py
-```
+- `src/qsc_core.py` — readiness function
+- `src/stabilization_v3.py` — optimized fixed control law
+- `src/stabilization_adaptive.py` — online adaptive controller
+- `src/examination_lattice.py` — association chain + examination depth
 
 ## Principle
 
