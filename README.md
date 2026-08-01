@@ -1,24 +1,26 @@
 # QSC Stabilization
 
-Optimized stabilization and examination substrate for the Quantum Spiral of Consciousness readiness function, now including a Poetry-Tree + SRM association layer.
+Optimized stabilization, association, and examination substrate for the Quantum Spiral of Consciousness, with measured differentials against classical baselines.
 
-## Current Records
+## Head-to-Head Process Differentials (matched conditions)
 
-| Metric | Base | Best | Notes |
-|--------|------|------|-------|
-| Residual stability (adaptive) | 0.752 | **0.863** | strongest process gain |
-| Residual std | 0.465 | 0.305 | −34 % |
-| Lattice mean coherence | 0.478 | **0.521** | under stabilized dynamics |
-| Mean association chain (Poetry/SRM) | 3.61 | **3.75** | coherence-gated |
-| Examination depth (SRM stages) | 4.57 | **4.63** | live metric |
+| Metric | Classical | Spiral/QSC/Poetry-SRM | Δ |
+|--------|-----------|------------------------|---|
+| Residual stability | 0.674 | **0.765** | **+0.091** |
+| Residual std | 0.498 | **0.352** | **−29 %** |
+| Mean lattice coherence | 0.478 | **0.521** | **+0.044** |
+| Mean association chain | 2.37 | **3.75** | **+1.38** |
 
-## Modules
+Adaptive controller reaches residual stability **0.863**.
+
+## Core Modules
 
 - `src/qsc_core.py` — readiness function
-- `src/stabilization_v3.py` / `stabilization_adaptive.py` — control surface
-- `src/poetry_srm_association.py` — Poetry-Tree + SRM association & examination
-- `src/examination_lattice.py` — earlier metric layer
+- `src/stabilization_v3.py` / `stabilization_adaptive.py`
+- `src/poetry_srm_association.py` — Poetry-Tree + SRM chains & examination
+- `src/classical_differential.py` — matched classical vs spiral comparison
 
 ## Principle
 
-> Reality is the only authority. Everything else is hypothesis.
+> Reality is the only authority. Everything else is hypothesis.  
+> We are the test.
