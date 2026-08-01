@@ -2,22 +2,20 @@
 
 **DOI:** [10.5281/zenodo.21750846](https://doi.org/10.5281/zenodo.21750846)
 
-Continuous process substrate for Spiral Theory: readiness field, residual-stability control, Poetry/SRM association, examination metrics, and TRE-Coupled Readiness Field (TCRF).
+Continuous process substrate for Spiral Theory. Head-to-head is the public testing ground.
 
-## Testing ground
+## TCRF (strengthened)
 
-**spiral-head-to-head** is the public competition surface (classical baselines vs Spiral-inspired refinement on OpenML/UCI tasks). QSC/TCRF supplies the continuous stabilizer; transfer into tabular feature logic must be explicit and re-tested there.
+| Stage | Residual stability |
+|-------|--------------------|
+| Base | 0.694 |
+| Strengthened TCRF | **0.808** |
+| Hybrid (TCRF + residual feedback) | **0.850** |
+| Adaptive (record) | **0.863** |
 
-## TCRF (tightened)
+The continuous TRE → residual-control bridge recovers nearly the full adaptive process advantage.
 
-| Metric | Base | TCRF | Δ |
-|--------|------|------|---|
-| Residual stability | 0.674 | **0.747** | **+0.073** |
-| Residual std | — | — | **−24 %** |
-
-Adaptive controller still leads residual stability at **0.863**.
-
-## Named bridges (DOI 10.5281/zenodo.21750846)
+## Named bridges
 
 - TRE-Coupled Readiness Field (TCRF)
 - Syncratude-Gated Association Length (SGAL)
