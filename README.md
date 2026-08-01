@@ -2,20 +2,25 @@
 
 Optimized stabilization control surface for the **Quantum Spiral of Consciousness** readiness function.
 
-## Result (v2)
+## Current Record (v3)
 
-| Metric | Base | Stabilized | Change |
-|--------|------|------------|--------|
-| Residual stability score | 0.7518 | 0.8025 | **+0.0507** |
-| Residual std | 0.4645 | 0.3784 | −18.5 % |
+| Metric | Base | Stabilized v3 | Change |
+|--------|------|---------------|--------|
+| Residual stability score | 0.7518 | **0.8395** | **+0.0877** |
+| Residual standard deviation | 0.4645 | 0.3177 | **−31.6 %** |
 
-The control law keeps the fractal growth envelope and applies a gentle breathing modulation plus secular decay to the oscillatory term — methods drawn from Spiral Breathing and Adaptive Spiral Wave.
+Control law keeps the fractal growth envelope and applies a light breathing modulation plus stronger secular decay of the oscillatory term (parameters found by systematic sweep).
+
+## Versions
+
+- **v2**: First measurable gain (+0.0507)
+- **v3**: Parameter-optimized (+0.0877, −31.6 % residual std)
 
 ## Quick start
 
 ```bash
 cd src
-python -c "from stabilization_v2 import run_v2_trial; import json; print(json.dumps(run_v2_trial()['metrics'], indent=2))"
+python stabilization_v3.py
 ```
 
 ## Principle
